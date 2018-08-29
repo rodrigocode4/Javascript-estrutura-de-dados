@@ -1,5 +1,5 @@
 //import { ContaCorrente } from './1-Banco/contaCorrente';
-import { ContaPoupanca} from './Banco/contaPoupanca';
+import { ContaPoupanca} from './1-Banco/contaPoupanca';
 //mport { question } from 'readline-sync';
 
 

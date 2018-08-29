@@ -1,4 +1,4 @@
-import { ContaPoupanca} from './Banco/contaPoupanca';
+import { ContaPoupanca} from './1-Banco/contaPoupanca';
 import { question } from 'readline-sync';
 
 
