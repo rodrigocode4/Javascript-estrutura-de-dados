@@ -90,3 +90,11 @@ console.log(arrNumbers3)
 let arrNumbers3Copy = Array.of(-1, 0, ...arrNumbers3)
 
 console.log(arrNumbers3Copy);
+
+//--------------------fill()----------------------// este método preenche os elementos com um univo valor, que é seu primeiro paranmetro, o 2º e 3º são os índices, que determinam o inicio e fim, repectivamente, do no elementos que serão preechido, sendo que o índice passado no 3º parâmetro, não inclui seu elemento, ou seja, o preenhimento é até o índice anterior a ele;
+console.log(arrNumbers3.fill(1, 2, 6));
+
+//--------------------copyWithin()----------------------// este método copia valores de uma sequência para posições anteriores no array. O 1º parâmetro é de onde começará a inserssão de valores, os 2º e 3º são o intervalo em que seus elementos serão copiados.
+let copyArray = [1, 2, 3, 4, 5, 6];
+
+console.log(copyArray.copyWithin(1, 3, 5));
