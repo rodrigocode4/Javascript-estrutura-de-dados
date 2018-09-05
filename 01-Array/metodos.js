@@ -176,3 +176,21 @@ console.log(nums.toString());
 
 //--------------------join()----------------------// insere um separador entre os caracteres da string
 console.log(nums.join('-'));
+
+
+// ----------- class TypedArray() -------------------//
+
+let length = 8;
+let float64 = new Float64Array(length);
+
+let array64 = []
+array64.length = length
+
+for (let i = 0; i < length; i++) {
+    float64[i] = i + 1;
+    array64[i] = i + 2;
+}
+console.log(float64);
+console.log(array64);
+
+// tutorial para trabalhar com arrays tipados: goo.gl/kZBsGx 
