@@ -157,11 +157,22 @@ console.log(arrNumbers.lastIndexOf(10)); // retorna 15 não sei pq
 console.log(arrNumbers.lastIndexOf(100));
 
 //--------------------find() e findIndex()----------------------// 
-const nuns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 function multipleOf13(e,) {
     return !!(e % 13 === 0) ? true : false;
 }
 
-console.log(nuns.find(multipleOf13)); //devolve o elemento em determinada condição
-console.log(nuns.findIndex(multipleOf13)); // devolve o índice de um elemento de determindada condição
+console.log(nums.find(multipleOf13)); //devolve o elemento em determinada condição
+console.log(nums.findIndex(multipleOf13)); // devolve o índice de um elemento de determindada condição
+
+//--------------------includes()----------------------//verifica se existe um determinado elemento no array
+
+console.log(nums.includes(11)); 
+console.log(nums.includes(18));
+
+//--------------------toString()----------------------//converte os elementos para uma única string
+console.log(nums.toString());
+
+//--------------------join()----------------------// insere um separador entre os caracteres da string
+console.log(nums.join('-'));
