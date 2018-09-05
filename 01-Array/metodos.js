@@ -143,8 +143,25 @@ console.log(names.sort((a, b) => {
     }
     return 0;
 }));
-
+//--------------------indexOf() e lastIndexOf()----------------------// 
 const names2 = ['Maève','Maeve']
 console.log(names2.sort((a, b) => {
     return a.localeCompare(b)
 }));
+
+console.log(arrNumbers.indexOf(10));
+console.log(arrNumbers.indexOf(100));
+
+arrNumbers.push(10) 
+console.log(arrNumbers.lastIndexOf(10)); // retorna 15 não sei pq
+console.log(arrNumbers.lastIndexOf(100));
+
+//--------------------find() e findIndex()----------------------// 
+const nuns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+function multipleOf13(e,) {
+    return !!(e % 13 === 0) ? true : false;
+}
+
+console.log(nuns.find(multipleOf13)); //devolve o elemento em determinada condição
+console.log(nuns.findIndex(multipleOf13)); // devolve o índice de um elemento de determindada condição
