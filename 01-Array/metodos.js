@@ -98,3 +98,53 @@ console.log(arrNumbers3.fill(1, 2, 6));
 let copyArray = [1, 2, 3, 4, 5, 6];
 
 console.log(copyArray.copyWithin(1, 3, 5));
+
+//--------------------sort()----------------------// este método ordena o array e recebe com parâmetro outro método, com dois parâmetro, no qual será tratado essa ordenação.
+console.log(arrNumbers.sort((a, b) => {
+    if (a < b) {
+        return -1;
+    }
+    if (a > b) {
+        return 1;
+    }
+    return 0;
+}));
+
+// ou
+console.log(arrNumbers.sort((a, b) => a - b));
+
+// 1. Exemplo de ordenação por idade
+const friends = [
+    { name: 'Rodrigo', age: 22 },
+    { name: 'Randerson', age: 21 },
+    { name: 'Rafael', age: 23 }
+]
+
+function comparePerson(a, b) {
+    if (a.age < b.age) {
+        return -1;
+    }
+    if (a.age > b.age) {
+        return 1;
+    }
+    return 0;
+}
+
+console.log(friends.sort(comparePerson));
+
+// 2. Exemplo de ordenação de string
+const names = ['Ana', 'ana', 'jhon', 'Jhon'];
+console.log(names.sort((a, b) => {
+    if (a.toLowerCase() < b.toLowerCase()) {
+        return -1;
+    }
+    if (a.toLowerCase() > b.toLowerCase()) {
+        return 1;
+    }
+    return 0;
+}));
+
+const names2 = ['Maève','Maeve']
+console.log(names2.sort((a, b) => {
+    return a.localeCompare(b)
+}));
