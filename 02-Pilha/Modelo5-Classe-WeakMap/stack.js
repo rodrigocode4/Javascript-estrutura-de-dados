@@ -14,13 +14,13 @@ const Stack = (function () {
             let ss = s.pop();
             return ss;
         }
-        isEmpty() {
-            let s = items.get(this);
-            return s.length == 0;
-        }
         peek() {
             let s = items.get(this);
             return s[s.length - 1];
+        }
+        isEmpty() {
+            let s = items.get(this);
+            return s.length == 0;
         }
         size() {
             let s = items.get(this);

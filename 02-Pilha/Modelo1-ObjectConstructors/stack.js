@@ -17,12 +17,12 @@ function Stack () {
         return items.length == 0;
     }
 
-    this.clear = function() {
-        return items = [];
-    }
-
     this.size = function() {//
         return items.length;
+    }
+
+    this.clear = function() {
+        return items = [];
     }
 
     this.print = () => { //
