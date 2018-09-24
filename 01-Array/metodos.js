@@ -153,8 +153,8 @@ console.log(arrNumbers.indexOf(10));
 console.log(arrNumbers.indexOf(100));
 
 arrNumbers.push(10) 
-console.log(arrNumbers.lastIndexOf(10)); // retorna 15 não sei pq
-console.log(arrNumbers.lastIndexOf(100));
+console.log(arrNumbers.lastIndexOf(10)); // retorna 15, que é o valor do índice do ultimo elemento adicionado no array
+console.log(arrNumbers.lastIndexOf(100)); // pq não há 100 no array
 
 //--------------------find() e findIndex()----------------------// 
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
