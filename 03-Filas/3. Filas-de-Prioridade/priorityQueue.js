@@ -5,7 +5,6 @@ function PriorityQueue() {
     function QueueElement(element, priority) {
         this.element = element;
         this.priority = priority;
-
     }
     this.enqueue = function (element, priority) {
         let queueElement = new QueueElement(element, priority);
@@ -23,11 +22,29 @@ function PriorityQueue() {
             items.push(queueElement);
         }
     }
+
     this.print = function() {
         for (let i = 0; i < items.length; i++) {
             console.log(`${items[i].element} - ${items[i].priority}`);
         }
     }
+    // Com ES6
+    this.enqueue2 = (element, priority) => {
+        let queueElement = new QueueElement(element, priority);
+        let added = false;
+
+        items.forEach((item, i )=> {
+            if (queueElement.priority < item.priority) {
+                items.splice(i, 0, queueElement);
+                added = true;
+                //break;
+            }
+        });
+        if (!added) {
+            items.push(queueElement);
+        }
+    }
+    this.print2 = () => items.forEach(e => console.log(`${e.element} - ${e.priority}`));
 }
 
 module.exports = PriorityQueue;
